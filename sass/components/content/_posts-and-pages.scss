@@ -1,0 +1,48 @@
+.content {
+	margin-top: 15px;
+}
+.content-post {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	grid-gap: 24px 16px;
+	margin-bottom: 30px;
+}
+.site-main {
+	margin-top: 20px;
+}
+.danhmuc-sp {
+	background-color: #fff;
+	margin-top: 5px;
+	z-index: 0;
+}
+.main-title {
+	h2 {
+		margin: 0;
+		font-size: 24px;
+		color: var(--color-accent);
+	}
+}
+
+.entry-meta {
+	margin-bottom: 15px;
+	color: var(--color-gray);
+}
+.post-thumbnail {
+	margin-bottom: 15px;
+}
+.hidden {
+	display: none;
+}
+.pagination{
+margin: 15px auto;
+width: fit-content;
+.page-numbers{
+padding: 10px ;
+background: #f2f2f2;
+border-radius: 8px;
+}
+.current{
+	color: #fff !important;
+	background: var(--color-accent) !important;
+}
+}

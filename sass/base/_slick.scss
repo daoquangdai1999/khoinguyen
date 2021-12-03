@@ -1,0 +1,60 @@
+.slick-prev,
+.slick-next {
+	width: 25px;
+	height: 25px;
+	background: #E5E5E5;
+	border: 0px solid var(--color-white);
+	border-radius: 100%;
+	z-index: 2;
+	display: flex !important;
+	padding: 5px;
+	justify-content: center;
+
+	@media all and (max-width: 600px) {
+		width: 35px;
+		height: 35px;
+	}
+}
+
+.slick-prev {
+	left: -20px;
+
+	&::before {
+		content: '';
+		background: url('images/angle-left-solid.svg') no-repeat;
+		background-size: contain;
+		width: 30px;
+		height: 30px;
+		display: block;
+		margin: 0 auto;
+
+		@media all and (max-width: 600px) {
+			font-size: 14px !important;
+			;
+		}
+	}
+}
+
+.slick-next {
+	right: -20px;
+
+	&::before {
+		content: '';
+		background: url('images/angle-right-solid.svg') no-repeat;
+		background-size: contain;
+		width: 30px;
+		height: 30px;
+		display: block;
+		margin: 0 auto;
+
+		@media all and (max-width: 600px) {
+			font-size: 12px !important;
+			;
+		}
+	}
+}
+
+.slick-prev:before,
+.slick-next:before {
+	font-size: 12px;
+}
